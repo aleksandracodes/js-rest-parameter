@@ -18,7 +18,9 @@ const updateSortReverse = (arr, ...letters) => {
         allLetters.push(i);
     }
     return allLetters.sort().reverse();
-}
+};
+
+// other option: const updateSortReverse = (arr, ...letters) => [...arr, ...letters].sort().reverse();
 
 let reverseSort = updateSortReverse(moreMixedLetters, 'n', 'm', 'o')
 console.log(reverseSort);
